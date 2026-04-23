@@ -210,43 +210,49 @@
     .auth-strip {
       background: var(--white);
       border-bottom: 1px solid var(--light-gray);
-      padding: 13px 40px;
+      padding: 28px 40px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 36px;
+      gap: 64px;
       flex-wrap: wrap;
     }
 
     .auth-item {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 10px;
+      text-align: center;
+      gap: 8px;
     }
 
     .auth-city-pill {
-      font-size: 0.68rem;
+      font-size: 0.92rem;
       font-weight: 800;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      background: var(--navy);
+      background: var(--blue);
       color: var(--white);
-      padding: 4px 12px;
+      padding: 8px 22px;
       border-radius: 99px;
       white-space: nowrap;
     }
 
     .auth-desc {
-      font-size: 0.82rem;
+      font-size: 0.95rem;
       font-weight: 600;
       color: var(--navy);
     }
 
     .auth-divider {
       width: 1px;
-      height: 28px;
+      height: 48px;
       background: var(--light-gray);
       flex-shrink: 0;
+    }
+
+    .auth-strip--below-compare {
+      border-top: 3px solid var(--blue);
     }
 
     /* ── SECTIONS ── */
@@ -1038,21 +1044,6 @@
 </div>
 
 <!-- ══════════════════════════════════════════ -->
-<!-- AUTHORIZATION STRIP -->
-<!-- ══════════════════════════════════════════ -->
-<div class="auth-strip">
-  <div class="auth-item">
-    <span class="auth-city-pill">San Jose</span>
-    <span class="auth-desc">CDD Program Certified Facility &amp; Hauler</span>
-  </div>
-  <div class="auth-divider"></div>
-  <div class="auth-item">
-    <span class="auth-city-pill">Los Gatos</span>
-    <span class="auth-desc">Authorized Hauler &amp; Facility</span>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════════ -->
 <!-- WHY PREMIER vs. COMPETITOR -->
 <!-- ══════════════════════════════════════════ -->
 <section class="compare-section">
@@ -1130,6 +1121,21 @@
     </div>
   </div>
 </section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- AUTHORIZATION STRIP (below Why It Matters) -->
+<!-- ══════════════════════════════════════════ -->
+<div class="auth-strip auth-strip--below-compare">
+  <div class="auth-item">
+    <span class="auth-city-pill">San Jose</span>
+    <span class="auth-desc">CDD Program Certified Facility &amp; Hauler</span>
+  </div>
+  <div class="auth-divider"></div>
+  <div class="auth-item">
+    <span class="auth-city-pill">Los Gatos</span>
+    <span class="auth-desc">Authorized Hauler &amp; Facility</span>
+  </div>
+</div>
 
 <!-- ══════════════════════════════════════════ -->
 <!-- SERVICES -->
