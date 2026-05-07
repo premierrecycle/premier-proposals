@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premier Recycle — Totesters | Gilead HQ T.I. | Turner Construction</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QDXNPTFQC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0QDXNPTFQC');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:       #132150;
+      --navy-light: #1e3270;
+      --blue:       #1B6FD8;
+      --blue-light: #3b82f6;
+      --blue-pale:  #dbeafe;
+      --white:      #ffffff;
+      --off-white:  #f5f7fa;
+      --gray:       #6b7280;
+      --light-gray: #e5e7eb;
+      --text:       #0d1a3a;
+      --green-dark:   #1a4a2e;
+      --green-mid:    #2d6a44;
+      --green-accent: #6ee7a8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Montserrat', 'Segoe UI', system-ui, sans-serif;
+      background: var(--off-white);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ─── HEADER ─── */
+    .header {
+      background: var(--navy);
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    .logo-img { height: 44px; width: auto; display: block; }
+    .header-meta {
+      text-align: right;
+      color: rgba(255,255,255,0.65);
+      font-size: 0.8rem;
+      line-height: 1.7;
+    }
+    .header-meta strong { color: var(--white); font-weight: 700; }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: linear-gradient(135deg, #080f22 0%, var(--navy) 55%, var(--navy-light) 100%);
+      color: var(--white);
+      padding: 88px 40px 76px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-eyebrow {
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green-accent);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 26px;
+      letter-spacing: -0.025em;
+      position: relative;
+    }
+    .hero h1 .highlight {
+      background: var(--blue);
+      color: var(--white);
+      padding: 2px 10px;
+      display: inline;
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      max-width: 640px;
+      margin: 0 auto 44px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.75;
+      position: relative;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 52px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .hero-stat .number {
+      font-size: 2.6rem;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+    }
+    .hero-stat .label {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      margin-top: 5px;
+    }
+    .stat-divider {
+      width: 1px;
+      background: rgba(255,255,255,0.18);
+      align-self: stretch;
+    }
+
+    /* ─── PROJECT BAND ─── */
+    .project-band {
+      background: var(--blue-pale);
+      border-bottom: 3px solid var(--blue);
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 52px;
+      flex-wrap: wrap;
+    }
+    .project-band .item { display: flex; flex-direction: column; align-items: center; }
+    .project-band .item-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--blue);
+    }
+    .project-band .item-value {
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    /* ─── INTRO ─── */
+    .intro-section {
+      padding: 72px 40px 0;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .intro-section p {
+      font-size: 1.12rem;
+      color: var(--gray);
+      line-height: 1.85;
+      max-width: 780px;
+    }
+
+    /* ─── SECTION DIVIDER ─── */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 0 40px;
+      margin: 64px auto 0;
+      max-width: 1100px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      white-space: nowrap;
+    }
+    .section-divider::before,
+    .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--light-gray);
+    }
+
+    /* ─── TOTESTERS FEATURE SPLIT ─── */
+    .totester-feature {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      min-height: 540px;
+      margin-top: 40px;
+      overflow: hidden;
+    }
+    .totester-photo-side {
+      position: relative;
+      background: var(--navy);
+      overflow: hidden;
+    }
+    .totester-photo-side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+    .totester-photo-side:hover img {
+      transform: scale(1.03);
+    }
+    .totester-photo-side::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, transparent 60%, rgba(19,33,80,0.5) 100%);
+      pointer-events: none;
+    }
+    .totester-specs-side {
+      background: var(--navy);
+      padding: 48px 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .totester-specs-side .eyebrow {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green-accent);
+      margin-bottom: 14px;
+    }
+    .totester-specs-side h2 {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 28px;
+      letter-spacing: -0.02em;
+    }
+    .spec-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .spec-row:first-of-type { border-top: 1px solid rgba(255,255,255,0.08); }
+    .spec-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.5);
+      flex-shrink: 0;
+    }
+    .spec-value {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--white);
+      text-align: right;
+    }
+
+    /* ─── PHOTO GRID (for additional photos) ─── */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px 0 0;
+    }
+    .photo-grid-slot {
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--light-gray);
+      position: relative;
+    }
+    .photo-grid-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .photo-grid-slot:hover img { transform: scale(1.04); }
+    .photo-grid-slot::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.35) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    /* ─── PRICING ─── */
+    .pricing-section {
+      background: var(--navy);
+      padding: 72px 40px;
+      margin-top: 64px;
+    }
+    .pricing-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .pricing-section .section-eyebrow {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 8px;
+    }
+    .pricing-section h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .pricing-section .section-lead {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.6);
+      max-width: 600px;
+      line-height: 1.7;
+      margin-bottom: 44px;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .pricing-card {
+      border-radius: 14px;
+      padding: 36px 36px 32px;
+    }
+    .pricing-card.option-a {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .pricing-card.option-b {
+      background: var(--white);
+      border: 2px solid var(--white);
+    }
+    .option-label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .option-a .option-label { color: rgba(255,255,255,0.4); }
+    .option-b .option-label { color: var(--blue); }
+    .option-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 28px;
+      line-height: 1.2;
+    }
+    .option-a .option-title { color: var(--white); }
+    .option-b .option-title { color: var(--navy); }
+    .price-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+    .price-line-label { font-size: 0.88rem; }
+    .option-a .price-line-label { color: rgba(255,255,255,0.65); }
+    .option-b .price-line-label { color: var(--gray); }
+    .price-line-value {
+      font-size: 1rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .option-a .price-line-value { color: var(--white); }
+    .option-b .price-line-value { color: var(--navy); }
+    .pricing-card hr {
+      border: none;
+      margin: 20px 0;
+    }
+    .option-a hr { border-top: 1px solid rgba(255,255,255,0.1); }
+    .option-b hr { border-top: 1px solid var(--light-gray); }
+    .pricing-note {
+      font-size: 0.8rem;
+      font-style: italic;
+      line-height: 1.65;
+    }
+    .option-a .pricing-note { color: rgba(255,255,255,0.45); }
+    .option-b .pricing-note { color: var(--gray); }
+
+    /* ─── WHY TOTESTERS ─── */
+    .why-section {
+      padding: 80px 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .why-section .section-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 10px;
+    }
+    .why-section h2 {
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 14px;
+      line-height: 1.15;
+    }
+    .why-section .section-lead {
+      font-size: 1.05rem;
+      color: var(--gray);
+      max-width: 640px;
+      line-height: 1.75;
+      margin-bottom: 48px;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .why-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 32px 28px;
+      border: 1px solid var(--light-gray);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .why-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+    }
+    .why-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--navy);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .why-icon svg { width: 26px; height: 26px; fill: var(--white); }
+    .why-card h3 {
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
+    }
+    .why-card p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    /* ─── TESTIMONIAL ─── */
+    .testimonial-outer {
+      background: var(--off-white);
+      padding: 0 40px 72px;
+    }
+    .testimonial-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .testimonial-wrap {
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 48px;
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+    }
+    .quote-mark {
+      font-size: 6rem;
+      line-height: 0.7;
+      color: var(--blue-light);
+      font-family: Georgia, serif;
+      flex-shrink: 0;
+    }
+    .testimonial-text {
+      font-size: 1.18rem;
+      color: var(--white);
+      font-style: italic;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .testimonial-author { font-size: 0.88rem; font-weight: 700; color: var(--blue-light); letter-spacing: 0.06em; }
+    .testimonial-company { color: rgba(255,255,255,0.45); font-size: 0.82rem; margin-top: 2px; }
+
+    /* ─── PREMIER STATS BAR ─── */
+    .premier-stats-bar {
+      background: var(--navy);
+      padding: 36px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      flex-wrap: wrap;
+    }
+    .premier-stat {
+      text-align: center;
+    }
+    .premier-stat .p-number {
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .premier-stat .p-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-top: 6px;
+    }
+    .premier-stat-divider {
+      width: 1px;
+      height: 56px;
+      background: rgba(255,255,255,0.15);
+    }
+
+    /* ─── TEAM ─── */
+    .team-section {
+      background: var(--white);
+      padding: 72px 40px;
+    }
+    .team-inner { max-width: 1100px; margin: 0 auto; }
+    .team-section .section-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 10px;
+    }
+    .team-section h2 {
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 14px;
+      line-height: 1.15;
+    }
+    .team-section .section-lead {
+      font-size: 1.05rem;
+      color: var(--gray);
+      max-width: 600px;
+      line-height: 1.75;
+      margin-bottom: 48px;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+    }
+    .team-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .team-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 3px solid var(--light-gray);
+      margin-bottom: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+    .team-name { font-size: 0.92rem; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+    .team-title { font-size: 0.78rem; color: var(--gray); line-height: 1.4; }
+    .team-contact-link {
+      display: block;
+      margin-top: 5px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--blue);
+      text-decoration: none;
+    }
+    .team-wide-card {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+      gap: 20px;
+      background: var(--light-gray);
+      border-radius: 12px;
+      padding: 20px 28px;
+    }
+    .team-wide-card img {
+      width: 200px;
+      height: 140px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    /* ─── SIGNATURE ─── */
+    .sig-section { background: var(--off-white); padding: 72px 40px; }
+    .sig-inner { max-width: 1100px; margin: 0 auto; }
+    .sig-cta { text-align: center; margin-bottom: 52px; }
+    .sig-cta h2 { font-size: 2rem; font-weight: 900; color: var(--navy); margin-bottom: 10px; }
+    .sig-cta p { color: var(--gray); font-size: 1rem; }
+    .sig-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .sig-block {
+      background: var(--white);
+      border: 1px solid var(--light-gray);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .sig-block h4 {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+    .sig-field { margin-bottom: 20px; }
+    .sig-field label { font-size: 0.74rem; color: var(--gray); display: block; margin-bottom: 6px; }
+    .sig-line { width: 100%; border-bottom: 2px solid var(--light-gray); height: 36px; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 28px 40px;
+      font-size: 0.8rem;
+    }
+    footer a { color: var(--blue-light); text-decoration: none; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 860px) {
+      .totester-feature { grid-template-columns: 1fr; min-height: auto; }
+      .totester-photo-side { aspect-ratio: 16/9; }
+      .totester-specs-side { padding: 36px 28px; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .header { padding: 14px 20px; }
+      .hero { padding: 56px 20px 48px; }
+      .project-band { gap: 24px; padding: 16px 20px; }
+      .intro-section, .why-section { padding: 48px 20px 0; }
+      .pricing-section { padding: 48px 20px; }
+      .team-section, .sig-section, .testimonial-outer { padding: 48px 20px; }
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+      .sig-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 28px; }
+      .stat-divider { display: none; }
+      .section-divider { padding: 0 20px; }
+      .photo-grid { padding: 10px 0 0; }
+      .testimonial-wrap { flex-direction: column; gap: 16px; padding: 32px 24px; }
+    }
+    @media print { .header { position: static; } }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+<header class="header">
+  <img class="logo-img" src="premier-logo.png" alt="Premier Recycle" />
+  <div class="header-meta">
+    <strong>Totesters Proposal</strong><br>
+    Gilead HQ T.I. &nbsp;·&nbsp; Turner Construction &nbsp;·&nbsp; May 6, 2026
+  </div>
+</header>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section class="hero">
+  <div class="hero-eyebrow">Premier Recycle's Totester Program</div>
+  <h1>
+    Better separation.<br>
+    <span class="highlight">Better data.</span>
+  </h1>
+  <p class="hero-sub">
+    The Totesters program gives Turner a clean, organized source-separation system on-site while generating the highly detailed, independently verified diversion data Gilead's corporate sustainability requirements demand.
+  </p>
+</section>
+
+<!-- ═══════════════════════════════ PROJECT BAND ═══════════════════════════════ -->
+<div class="project-band">
+  <div class="item">
+    <div class="item-label">Project</div>
+    <div class="item-value">Gilead Sciences HQ — T.I.</div>
+  </div>
+  <div class="item">
+    <div class="item-label">Location</div>
+    <div class="item-value">Foster City, CA</div>
+  </div>
+  <div class="item">
+    <div class="item-label">Prepared For</div>
+    <div class="item-value">Turner Construction</div>
+  </div>
+  <div class="item">
+    <div class="item-label">Date</div>
+    <div class="item-value">May 6, 2026</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ TOTESTERS ═══════════════════════════════ -->
+<!-- Photo + Specs split -->
+<div class="totester-feature">
+  <div class="totester-photo-side">
+    <img src="totester-photo-1.jpg" alt="Totester cart on jobsite" />
+  </div>
+  <div class="totester-specs-side">
+    <div class="eyebrow">Construction-Grade Specs</div>
+    <h2>Built for the job.<br>Sized for the space.</h2>
+    <div class="spec-row">
+      <span class="spec-label">Size</span>
+      <span class="spec-value">49.5″ L × 30.5″ W × 41″ H</span>
+    </div>
+    <div class="spec-row">
+      <span class="spec-label">Body</span>
+      <span class="spec-value">0.25″ LDPE rotationally molded</span>
+    </div>
+    <div class="spec-row">
+      <span class="spec-label">Base</span>
+      <span class="spec-value">Welded steel, bolted-through casters</span>
+    </div>
+    <div class="spec-row">
+      <span class="spec-label">Wheels</span>
+      <span class="spec-value">8.6″ semi-pneumatic, locking brakes</span>
+    </div>
+    <div class="spec-row">
+      <span class="spec-label">Design</span>
+      <span class="spec-value">Tapered sides protect walls; forklift pockets</span>
+    </div>
+    <div class="spec-row">
+      <span class="spec-label">Haul load</span>
+      <span class="spec-value">18 carts = 18+ cubic yards</span>
+    </div>
+    <div class="spec-row">
+      <span class="spec-label">Weighing</span>
+      <span class="spec-value">Each cart weighed individually on arrival</span>
+    </div>
+    <a href="totester-specs.pdf" download class="dl-btn" style="margin-top:28px;display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:var(--white);font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:12px 22px;border-radius:99px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.18)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 8h14v2H5z"/></svg>
+      Download Spec Sheet
+    </a>
+  </div>
+</div>
+
+<!-- Totester stats band -->
+<div style="background:var(--off-white);display:flex;align-items:center;justify-content:center;gap:80px;padding:32px 40px;flex-wrap:wrap;border-bottom:1px solid var(--light-gray);">
+  <div style="text-align:center;">
+    <div style="font-size:2.6rem;font-weight:900;color:var(--navy);line-height:1;letter-spacing:-0.02em;">1 cu.yd.</div>
+    <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);margin-top:6px;">Approximate Totester Capacity</div>
+  </div>
+  <div style="width:1px;height:52px;background:var(--light-gray);"></div>
+  <div style="text-align:center;">
+    <div style="font-size:2.6rem;font-weight:900;color:var(--navy);line-height:1;letter-spacing:-0.02em;">18</div>
+    <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);margin-top:6px;">Totesters per Full Delivery</div>
+  </div>
+</div>
+
+<!-- Additional photo grid — add photos as totester-photo-2.jpg, 3.jpg, 4.jpg -->
+<div class="photo-grid" id="photo-grid">
+  <div class="photo-grid-slot" id="slot-2"><img src="totester-photo-2.jpg" alt="" onerror="document.getElementById('slot-2').style.display='none';" /></div>
+  <div class="photo-grid-slot" id="slot-3"><img src="totester-photo-3.jpg" alt="" onerror="document.getElementById('slot-3').style.display='none';" /></div>
+  <div class="photo-grid-slot" id="slot-4"><img src="totester-photo-4.jpg" alt="" onerror="document.getElementById('slot-4').style.display='none';" /></div>
+</div>
+
+<!-- ═══════════════════════════════ PRICING ═══════════════════════════════ -->
+<section class="pricing-section">
+  <div class="pricing-inner">
+    <div class="section-eyebrow">Pricing Options</div>
+    <h2>Two ways to work with us.</h2>
+    <p class="section-lead">
+      Whether Premier runs the full exchange or Turner handles the hauling, every cart is individually weighed at our San Jose facility and every load comes with a complete stream-level diversion report.
+    </p>
+
+    <div class="pricing-grid">
+      <!-- Option A -->
+      <div class="pricing-card option-a">
+        <div class="option-label">Option A</div>
+        <div class="option-title">Totesters Lease + Self-Haul</div>
+        <div class="price-line">
+          <span class="price-line-label">Lease rate</span>
+          <span class="price-line-value">$20 / cart / month</span>
+        </div>
+        <div class="price-line">
+          <span class="price-line-label">Dumping at Premier (San Jose)</span>
+          <span class="price-line-value">$25 / cart</span>
+        </div>
+        <hr />
+        <p class="pricing-note">Turner handles transport. Includes repair coverage for normal wear; gross negligence excluded.</p>
+      </div>
+
+      <!-- Option B -->
+      <div class="pricing-card option-b">
+        <div class="option-label">Option B</div>
+        <div class="option-title">Full-Service Exchange</div>
+        <div class="price-line">
+          <span class="price-line-label">Per exchange (18 Totesters)</span>
+          <span class="price-line-value">$850 / exchange</span>
+        </div>
+        <hr />
+        <p class="pricing-note">Premier handles pickup, transport, processing, and reporting. Includes individual cart weighing and a complete stream-level diversion report.</p>
+      </div>
+    </div>
+    <div style="margin-top:32px;">
+      <a href="gilead-proposal.pdf" download style="display:inline-flex;align-items:center;gap:10px;background:var(--white);color:var(--navy);font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:12px 22px;border-radius:99px;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 8h14v2H5z"/></svg>
+        Download Proposal PDF
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ WHY TOTESTERS ═══════════════════════════════ -->
+<section class="why-section">
+  <div class="section-eyebrow">Why Totesters</div>
+  <h2>The right tool for<br>high-diversion interiors.</h2>
+  <p class="section-lead">
+    Compact, mobile, and staged by material type directly where trades are working. The result is cleaner source separation, better data, and a safer site from day one.
+  </p>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+      </div>
+      <h3>More Specific Diversion Data</h3>
+      <p>Every cart is individually weighed at Premier's facility, producing per-material diversion data by stream — accurate enough for any corporate sustainability audit.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">
+        <svg viewBox="0 0 24 24"><path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"/></svg>
+      </div>
+      <h3>Better Source Separation</h3>
+      <p>Carts are staged by trade or material type at the point of work, keeping streams clean before they ever leave the floor. No commingling, no sorting after the fact.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L4 5v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V5l-8-3z"/></svg>
+      </div>
+      <h3>Cleaner, Safer Job Sites</h3>
+      <p>Carts roll directly to where trades are working, making debris disposal faster and easier at the source. No hauling material across the floor to a distant bin — workers load the cart where they stand, then roll it out.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TESTIMONIAL ═══════════════════════════════ -->
+
+<!-- ═══════════════════════════════ PREMIER STATS BAR ═══════════════════════════════ -->
+<div class="premier-stats-bar">
+  <div class="premier-stat">
+    <div class="p-number">30+</div>
+    <div class="p-label">Years Family Owned &amp; Operated</div>
+  </div>
+  <div class="premier-stat-divider"></div>
+  <div class="premier-stat">
+    <div class="p-number">#1</div>
+    <div class="p-label">Largest Hand-Sort C&amp;D Facility in the U.S.</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ TEAM ═══════════════════════════════ -->
+<section class="team-section">
+  <div class="team-inner">
+    <div class="section-eyebrow">Your Team</div>
+    <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.4rem);font-weight:900;color:var(--navy);margin-bottom:14px;line-height:1.15;">The People Making It Happen</h2>
+    <p class="section-lead" style="font-size:1.05rem;color:var(--gray);max-width:600px;line-height:1.75;margin-bottom:48px;">
+      Real people, dedicated to your project from the first cart on-site to the final diversion report.
+    </p>
+    <div class="team-grid">
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/cd484082-b0a0-47aa-891a-b90c373be61f/Dusty+Hill-1.jpg" alt="Dusty Hill" />
+        <div class="team-name">Dusty Hill</div>
+        <div class="team-title">Account Management</div>
+        <a class="team-contact-link" href="tel:4082191722">(408) 219-1722</a>
+        <a class="team-contact-link" href="mailto:dusty@premierrecycle.com">dusty@premierrecycle.com</a>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/8e180e6c-00a3-473d-90d2-0152eaa15d31/Premier-12.jpg" alt="Sean Lernihan" />
+        <div class="team-name">Sean Lernihan</div>
+        <div class="team-title">Account Management</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/55cac0cc-76d3-4815-8e0d-cfc7ad5430bc/Premier-5.jpg" alt="Caroline Niemiec" />
+        <div class="team-name">Caroline Niemiec</div>
+        <div class="team-title">Sustainability &amp; Diversion Reporting</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/5bdd55af-82ca-4d86-bdef-d39527da7e70/Premier-9.jpg" alt="Jose Montenegro" />
+        <div class="team-name">Jose Montenegro</div>
+        <div class="team-title">Dispatching</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/055ca2f2-02f8-44f5-a0b0-2327860885fa/Premier-2.jpg" alt="Aaron Hill" />
+        <div class="team-name">Aaron Hill</div>
+        <div class="team-title">Accounts Payable</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/a4b507de-125c-4529-a57d-6b1c2d5aa84f/Premier-8.jpg" alt="Rosie Chavez" />
+        <div class="team-name">Rosie Chavez</div>
+        <div class="team-title">Customer Service</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/50b6c592-1a49-4512-826f-033df158fc9a/Sara+Headshot-1.jpg" alt="Sara Behnke" />
+        <div class="team-name">Sara Behnke</div>
+        <div class="team-title">Customer Service</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/89b26b83-b6f8-4304-9858-0ede91ae21b5/Premier-6.jpg" alt="Michael Grizzle" />
+        <div class="team-name">Michael Grizzle</div>
+        <div class="team-title">Facility Operations</div>
+      </div>
+      <div class="team-wide-card">
+        <img src="../bancroft-housing-clark/team-group.jpg" alt="Premier Recycle Team" onerror="this.style.display='none';" />
+        <div>
+          <div class="team-name">Our Drivers &amp; Facility Team</div>
+          <div class="team-title">Behind every exchange is a team that takes pride in doing it right — and getting you the data you need.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SIGNATURE ═══════════════════════════════ -->
+<section class="sig-section">
+  <div class="sig-inner">
+    <div class="sig-cta">
+      <h2>Let's Get Started</h2>
+      <p>We're local, we're set up for Totesters, and we're ready to support Gilead's diversion program from day one.</p>
+    </div>
+    <div class="sig-grid">
+      <div class="sig-block">
+        <h4>Customer Authorization</h4>
+        <div class="sig-field"><label>Signature</label><div class="sig-line"></div></div>
+        <div class="sig-field"><label>Printed Name &amp; Title</label><div class="sig-line"></div></div>
+        <div class="sig-field"><label>Date</label><div class="sig-line"></div></div>
+      </div>
+      <div class="sig-block" style="border-color:var(--navy);">
+        <h4>Premier Recycle Authorization</h4>
+        <div class="sig-field"><label>Signature</label><div class="sig-line"></div></div>
+        <div class="sig-field"><label>Printed Name &amp; Title</label><div class="sig-line"></div></div>
+        <div class="sig-field"><label>Date</label><div class="sig-line"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer>
+  Premier Recycle Company &nbsp;|&nbsp; 348 Phelan Avenue, San Jose, CA 95112 &nbsp;|&nbsp;
+  <a href="tel:4082977910">(408) 297-7910</a> &nbsp;|&nbsp;
+  <a href="https://premierrecycle.com" target="_blank">premierrecycle.com</a>
+</footer>
+
+<script>
+  // Hide photo grid entirely if no additional photos loaded
+  window.addEventListener('load', function() {
+    var grid = document.getElementById('photo-grid');
+    if (grid) {
+      var anyVisible = Array.from(grid.querySelectorAll('.photo-grid-slot')).some(function(el) {
+        return el.style.display !== 'none';
+      });
+      if (!anyVisible) grid.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
