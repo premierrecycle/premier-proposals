@@ -667,7 +667,10 @@
       .hero-stats { gap: 28px; }
       .stat-divider { display: none; }
       .section-divider { padding: 0 20px; }
-      .photo-grid { padding: 10px 0 0; }
+      .photo-grid { padding: 10px 0 0; grid-template-columns: 1fr; }
+      .photo-grid-slot { aspect-ratio: 16/9; }
+      .totester-stats-band { flex-direction: column; gap: 24px; text-align: center; }
+      .totester-stats-band .stat-sep { display: none; }
       .testimonial-wrap { flex-direction: column; gap: 16px; padding: 32px 24px; }
     }
     @media print { .header { position: static; } }
@@ -761,12 +764,12 @@
 </div>
 
 <!-- Totester stats band -->
-<div style="background:var(--off-white);display:flex;align-items:center;justify-content:center;gap:80px;padding:32px 40px;flex-wrap:wrap;border-bottom:1px solid var(--light-gray);">
+<div class="totester-stats-band" style="background:var(--off-white);display:flex;align-items:center;justify-content:center;gap:80px;padding:32px 40px;flex-wrap:wrap;border-bottom:1px solid var(--light-gray);">
   <div style="text-align:center;">
     <div style="font-size:2.6rem;font-weight:900;color:var(--navy);line-height:1;letter-spacing:-0.02em;">1 cu.yd.</div>
     <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);margin-top:6px;">Approximate Totester Capacity</div>
   </div>
-  <div style="width:1px;height:52px;background:var(--light-gray);"></div>
+  <div class="stat-sep" style="width:1px;height:52px;background:var(--light-gray);"></div>
   <div style="text-align:center;">
     <div style="font-size:2.6rem;font-weight:900;color:var(--navy);line-height:1;letter-spacing:-0.02em;">18</div>
     <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);margin-top:6px;">Totesters per Full Delivery</div>
