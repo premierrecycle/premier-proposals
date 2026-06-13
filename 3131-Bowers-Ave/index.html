@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premier Recycle — Proposal | Silicon Valley Christian Assembly Improvement Project</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QDXNPTFQC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0QDXNPTFQC');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #132150;
+      --navy-light: #1e3270;
+      --blue: #1B6FD8;
+      --blue-light: #3b82f6;
+      --blue-pale: #dbeafe;
+      --white: #ffffff;
+      --off-white: #f5f7fa;
+      --gray: #6b7280;
+      --light-gray: #e5e7eb;
+      --text: #0d1a3a;
+      --green-dark: #1a4a2e;
+      --green-mid: #2d6a44;
+      --green-accent: #6ee7a8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Montserrat', 'Segoe UI', system-ui, sans-serif;
+      background: var(--off-white);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      background: var(--navy);
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-img {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
+
+    .header-meta {
+      text-align: right;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.82rem;
+      line-height: 1.7;
+    }
+
+    .header-meta strong {
+      color: var(--white);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #0d1a3a 0%, var(--navy) 55%, var(--navy-light) 100%);
+      color: var(--white);
+      padding: 80px 40px 70px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      display: none;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue-light);
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero h1 .highlight {
+      background: var(--blue);
+      color: var(--white);
+      padding: 0 8px;
+      display: inline;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      max-width: 660px;
+      margin: 0 auto 36px;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.7;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-top: 44px;
+    }
+
+    .hero-stat {
+      text-align: center;
+    }
+
+    .hero-stat .number {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .hero-stat .label {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-top: 4px;
+    }
+
+    .stat-divider {
+      width: 1px;
+      background: rgba(255,255,255,0.2);
+      align-self: stretch;
+    }
+
+    /* ── PROJECT INFO BAND ── */
+    .project-band {
+      background: var(--blue-pale);
+      border-bottom: 3px solid var(--blue);
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .project-band .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project-band .item-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--blue);
+    }
+
+    .project-band .item-value {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      padding: 72px 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .section-lead {
+      font-size: 1.08rem;
+      color: var(--gray);
+      max-width: 680px;
+      line-height: 1.75;
+      margin-bottom: 48px;
+    }
+
+    /* ── COMPETITOR COMPARISON ── */
+    .compare-section {
+      background: var(--navy);
+      color: var(--white);
+      padding: 72px 40px;
+    }
+
+    .compare-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .compare-section .section-title {
+      color: var(--white);
+    }
+
+    .compare-section .section-lead {
+      color: rgba(255,255,255,0.75);
+    }
+
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .compare-card {
+      border-radius: 12px;
+      padding: 32px;
+    }
+
+    .compare-card.premier {
+      background: rgba(255,255,255,0.07);
+      border: 2px solid var(--blue-light);
+    }
+
+    .compare-card.competitor {
+      background: rgba(0,0,0,0.25);
+      border: 2px solid rgba(255,255,255,0.1);
+    }
+
+    .compare-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .compare-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 99px;
+    }
+
+    .compare-badge.premier-badge {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .compare-badge.competitor-badge {
+      background: rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.6);
+    }
+
+    .compare-card-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+    }
+
+    .compare-card.premier .compare-card-name {
+      color: var(--blue-light);
+    }
+
+    .compare-card.competitor .compare-card-name {
+      color: rgba(255,255,255,0.5);
+    }
+
+    .compare-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .compare-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .check-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+      font-size: 0.65rem;
+      font-weight: 900;
+    }
+
+    .check-icon.yes {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .check-icon.no {
+      background: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.35);
+    }
+
+    .compare-list .text-dim {
+      color: rgba(255,255,255,0.85);
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 32px 28px;
+      border: 1px solid var(--light-gray);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--navy);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .service-icon svg {
+      width: 26px;
+      height: 26px;
+      fill: var(--white);
+    }
+
+    .service-card h3 {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 10px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+    }
+
+    .service-card p {
+      font-size: 0.92rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    /* ── LEED BANNER ── */
+    .leed-banner {
+      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%);
+      border-radius: 16px;
+      padding: 48px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-top: 40px;
+      color: var(--white);
+    }
+
+    .leed-icon-wrap {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+    }
+
+    .leed-content h3 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin-bottom: 10px;
+      color: var(--green-accent);
+    }
+
+    .leed-content p {
+      font-size: 0.97rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+      max-width: 600px;
+    }
+
+    .leed-tiers {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    .leed-tier {
+      padding: 6px 16px;
+      border-radius: 99px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .leed-tier.certified { background: rgba(255,255,255,0.15); color: #d1fae5; }
+    .leed-tier.silver { background: rgba(192,192,192,0.25); color: #e2e8f0; }
+    .leed-tier.gold { background: rgba(27,111,216,0.35); color: #93c5fd; }
+    .leed-tier.platinum { background: rgba(255,255,255,0.18); color: #e0f2fe; }
+    .leed-tier.featured { outline: 2px solid var(--green-accent); }
+
+    /* ── TRACK RECORD ── */
+    .track-section {
+      background: var(--navy);
+      padding: 72px 40px;
+    }
+
+    .track-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .track-section .section-title {
+      color: var(--white);
+    }
+
+    .track-section .section-lead {
+      color: rgba(255,255,255,0.7);
+    }
+
+    .track-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 200px;
+      gap: 12px;
+    }
+
+    .track-card {
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      cursor: default;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .track-card:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+      z-index: 2;
+    }
+
+    .track-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.15) 60%, transparent 100%);
+      border-radius: 10px;
+    }
+
+    .track-card--large {
+      grid-column: span 2;
+    }
+
+    .track-card__inner {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 22px;
+    }
+
+    .track-card__label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--blue-light);
+      margin-bottom: 4px;
+    }
+
+    .track-card__name {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    .track-card--large .track-card__name {
+      font-size: 1.45rem;
+    }
+
+    .track-card__location {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.6);
+      margin-top: 3px;
+      font-weight: 500;
+    }
+
+    .track-card--featured::after {
+      content: 'LEED';
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--blue);
+      color: var(--white);
+      font-size: 0.6rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      padding: 4px 10px;
+      border-radius: 99px;
+      text-transform: uppercase;
+    }
+
+    .track-card--placeholder {
+      background-color: var(--navy-light);
+    }
+
+    .track-grid-featured {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 280px;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .track-grid-secondary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 160px;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .track-grid-small {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 130px;
+      gap: 12px;
+    }
+
+    .track-section-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin: 28px 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      .track-grid, .track-grid-featured, .track-grid-secondary {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 160px;
+      }
+      .track-grid-residential {
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: 200px !important;
+      }
+      .track-grid-small {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-auto-rows: 130px !important;
+      }
+      .track-section { padding: 48px 20px; }
+    }
+
+    @media (max-width: 480px) {
+      .track-grid, .track-grid-featured, .track-grid-secondary {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 150px;
+      }
+      .track-grid-residential {
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: 200px !important;
+      }
+      .track-grid-small {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-auto-rows: 130px !important;
+      }
+      .track-card--large { grid-column: span 1; }
+    }
+
+    /* ── TESTIMONIAL ── */
+    .testimonial-wrap {
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 48px;
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+      margin-top: 0;
+    }
+
+    .quote-mark {
+      font-size: 6rem;
+      line-height: 0.7;
+      color: var(--blue-light);
+      font-family: Georgia, serif;
+      flex-shrink: 0;
+    }
+
+    .testimonial-text {
+      font-size: 1.18rem;
+      color: var(--white);
+      font-style: italic;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--blue-light);
+      letter-spacing: 0.06em;
+    }
+
+    .testimonial-company {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.82rem;
+      margin-top: 2px;
+    }
+
+    /* ── PRICING ── */
+    .pricing-section {
+      background: var(--white);
+      padding: 72px 40px;
+    }
+
+    .pricing-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .pricing-table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      margin-bottom: 32px;
+    }
+
+    .pricing-table thead tr {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .pricing-table thead th {
+      padding: 14px 20px;
+      text-align: left;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .pricing-table .group-header {
+      background: var(--blue-pale);
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .pricing-table .group-header td {
+      padding: 12px 20px;
+    }
+
+    .pricing-table tbody tr:not(.group-header) td {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--light-gray);
+      font-size: 0.93rem;
+      color: var(--text);
+      background: var(--white);
+    }
+
+    .pricing-table tbody tr:not(.group-header):last-child td {
+      border-bottom: none;
+    }
+
+    .pricing-table .price-input {
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 1rem;
+    }
+
+    .included-badge {
+      background: #d1fae5;
+      color: #065f46;
+      padding: 3px 10px;
+      border-radius: 99px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .terms-box {
+      background: var(--off-white);
+      border: 1px solid var(--light-gray);
+      border-radius: 10px;
+      padding: 24px 28px;
+      font-size: 0.82rem;
+      color: var(--gray);
+      line-height: 1.8;
+    }
+
+    .terms-box ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .terms-box ul li::before {
+      content: '·  ';
+      font-weight: 900;
+      color: var(--navy);
+    }
+
+    /* ── TEAM ── */
+    .team-section {
+      background: var(--white);
+      padding: 72px 40px;
+    }
+
+    .team-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      margin-top: 48px;
+    }
+
+    .team-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .team-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 3px solid var(--light-gray);
+      margin-bottom: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .team-name {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .team-title {
+      font-size: 0.78rem;
+      color: var(--gray);
+      line-height: 1.4;
+    }
+
+    .team-contact-badge {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--blue);
+      color: var(--white);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 99px;
+    }
+
+    .team-contact-phone {
+      display: block;
+      margin-top: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    @media (max-width: 768px) {
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+      .team-section { padding: 48px 20px; }
+    }
+
+    @media (max-width: 480px) {
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ── SIGNATURE ── */
+    .sig-section {
+      background: var(--off-white);
+      padding: 72px 40px;
+    }
+
+    .sig-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .sig-cta {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .sig-cta h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .sig-cta p {
+      color: var(--gray);
+      font-size: 1rem;
+    }
+
+    .sig-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .sig-block {
+      background: var(--white);
+      border: 1px solid var(--light-gray);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .sig-block h4 {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+
+    .sig-field {
+      margin-bottom: 20px;
+    }
+
+    .sig-field label {
+      font-size: 0.78rem;
+      color: var(--gray);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .sig-field .sig-line {
+      width: 100%;
+      border-bottom: 2px solid var(--light-gray);
+      height: 36px;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 4px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 28px 40px;
+      font-size: 0.82rem;
+    }
+
+    footer a {
+      color: var(--blue-light);
+      text-decoration: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .header { padding: 14px 20px; }
+      .hero { padding: 56px 20px 48px; }
+      .project-band { gap: 24px; padding: 16px 20px; }
+      .section { padding: 48px 20px; }
+      .compare-section { padding: 48px 20px; }
+      .compare-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .leed-banner { flex-direction: column; padding: 32px 24px; gap: 24px; }
+      .testimonial-wrap { flex-direction: column; gap: 16px; padding: 32px 24px; }
+      .pricing-section { padding: 48px 20px; }
+      .sig-grid { grid-template-columns: 1fr; }
+      .sig-section { padding: 48px 20px; }
+      .hero-stats { gap: 28px; }
+      .stat-divider { display: none; }
+    }
+
+    @media print {
+      .header { position: static; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- HEADER -->
+<!-- ══════════════════════════════════════════ -->
+<header class="header">
+  <div class="logo-area">
+    <img class="logo-img" src="../webcor-clean-energy-campus/premier-logo.png" alt="Premier Recycle" />
+  </div>
+  <div class="header-meta">
+    <strong>Proposal #1980</strong><br>
+    Silicon Valley Christian Assembly Improvement Project &nbsp;·&nbsp; Rocky Abina (ACT-GC)<br>
+    June 12, 2026
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- HERO -->
+<!-- ══════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-eyebrow">Local Expertise. Exceptional Service. Zero Guesswork.</div>
+  <h1>
+    The C&amp;D Recycler<br>
+    <span class="highlight">Built for Builders.</span>
+  </h1>
+  <p class="hero-sub">
+    Managing a construction project is complicated enough — your recycling partner shouldn't add to it. That's why Premier Recycle owns the process from first bin to final closeout, delivering accurate diversion data, reliable service, and one team with you the whole way.
+  </p>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="number">30+</div>
+      <div class="label">Years Family Owned &amp; Operated</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="hero-stat">
+      <div class="number">#1</div>
+      <div class="label">Largest Hand-Sort C&amp;D Facility in the U.S.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- PROJECT INFO BAND -->
+<!-- ══════════════════════════════════════════ -->
+<div class="project-band">
+  <div class="item">
+    <div class="item-label">Project</div>
+    <div class="item-value">Silicon Valley Christian Assembly Improvement Project</div>
+  </div>
+  <div class="item">
+    <div class="item-label">Location</div>
+    <div class="item-value">3131 Bowers Ave, Santa Clara, CA</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- WHY PREMIER vs. COMPETITOR -->
+<!-- ══════════════════════════════════════════ -->
+<section class="compare-section">
+  <div class="compare-inner">
+    <div class="section-eyebrow">Why It Matters Who You Choose</div>
+    <h2 class="section-title">Fully Integrated vs. Fragmented</h2>
+    <p class="section-lead">
+      Not all partners are the same:
+    </p>
+
+    <div class="compare-grid">
+      <!-- PREMIER -->
+      <div class="compare-card premier">
+        <div class="compare-card-header">
+          <span class="compare-badge premier-badge">The Gold Standard</span>
+          <div class="compare-card-name">Premier Recycle</div>
+        </div>
+        <ul class="compare-list">
+          <li>
+            <div class="check-icon yes">✓</div>
+            <span><strong>Fully Integrated, San Jose-Based</strong> — We own the trucks and the sorting facility, so everything (debris box service, materials processing, and diversion reporting) stays under one roof. One point of contact, full chain of custody, no subcontractors, no third-party calls at closeout.</span>
+          </li>
+          <li>
+            <div class="check-icon yes">✓</div>
+            <span><strong>Diversion Data You Can Count On</strong> — Every load tracked and documented at our own facility, so your records are clean, consistent, and ready for Green Halo entry at closeout.</span>
+          </li>
+          <li>
+            <div class="check-icon yes">✓</div>
+            <span><strong>Reliable Service, Every Time</strong> — Minutes from your site, no regional dispatch delays. We can be there next day. Real people answer your calls, fast turnaround, and a team that treats your schedule like it's their own.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- COMPETITOR -->
+      <div class="compare-card competitor">
+        <div class="compare-card-header">
+          <span class="compare-badge competitor-badge">The Alternative</span>
+          <div class="compare-card-name">Hauler-Only Provider</div>
+        </div>
+        <ul class="compare-list">
+          <li>
+            <div class="check-icon no">✗</div>
+            <span class="text-dim">Material handed off to whichever facility is cheapest — no downstream ownership, no audit trail</span>
+          </li>
+          <li>
+            <div class="check-icon no">✗</div>
+            <span class="text-dim">Diversion tags require calling multiple facilities to piece together documentation</span>
+          </li>
+          <li>
+            <div class="check-icon no">✗</div>
+            <span class="text-dim">Inconsistent records across facilities — harder to reconcile, harder to defend</span>
+          </li>
+          <li>
+            <div class="check-icon no">✗</div>
+            <span class="text-dim">Out-of-area dispatch — slower response, drivers unfamiliar with your site</span>
+          </li>
+          <li>
+            <div class="check-icon no">✗</div>
+            <span class="text-dim">Calls go to voicemail, tickets go into a queue — you're a job number, not a partner</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SERVICES -->
+<!-- ══════════════════════════════════════════ -->
+<section class="section">
+  <div class="section-eyebrow">What We Offer</div>
+  <h2 class="section-title">Full-Service C&amp;D Recycling, Start to Close-Out</h2>
+  <p class="section-lead">
+    Every part of the recycling process runs through Premier Recycle, from the first bin on site to the last signature on your close-out package.
+  </p>
+
+  <div class="services-grid">
+    <!-- Service 1 -->
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+        </svg>
+      </div>
+      <h3>Debris Bin Rental &amp; Hauling</h3>
+      <p>
+        Roll-off bins in 10, 20, and 40 yard sizes. Dependable pickups, quick turnaround. No surprises. Solutions to your jobsite challenges: covers, pick rings, and <a href="https://totesters.com" target="_blank" style="color: var(--blue);">Totester mini carts</a> available for tight footprints.
+      </p>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 3H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/>
+        </svg>
+      </div>
+      <h3>In-House Sorting Facility</h3>
+      <p>
+        The largest hand-sort C&amp;D facility in the U.S., RCI-certified and owned and operated by Premier Recycle. Every load sorted, weighed, and documented under one roof by the same company that picked it up.
+      </p>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM7 17v-2h10v2H7zm0-4v-2h10v2H7zm0-4V7h5v2H7z"/>
+        </svg>
+      </div>
+      <h3>Diversion Documentation &amp; Reporting</h3>
+      <p>
+        Diversion reports, waste management plans, and permit recycling refund requests, all produced from independently audited facility data by our on-staff sustainability experts and ready when you need them.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- TESTIMONIAL -->
+<!-- ══════════════════════════════════════════ -->
+<section style="background: var(--off-white); padding: 0 40px 72px;">
+  <div style="max-width: 1100px; margin: 0 auto;">
+    <div class="testimonial-wrap">
+      <div class="quote-mark">"</div>
+      <div>
+        <p class="testimonial-text">
+          Premier Recycle Company provides unbelievable service and personal attention to detail.
+          They continually help us provide quality work for our customers.
+        </p>
+        <div class="testimonial-author">Ken Peterson</div>
+        <div class="testimonial-company">Devcon Construction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- TRACK RECORD -->
+<!-- ══════════════════════════════════════════ -->
+<section class="track-section">
+  <div class="track-inner">
+    <div class="section-eyebrow">Our Track Record</div>
+    <h2 class="section-title">Big Projects. Demanding Sites. Delivered.</h2>
+    <p class="section-lead">
+      From landmark infrastructure to residential projects across the Bay Area, Premier Recycle has handled C&amp;D recycling on some of the most demanding projects in the region.
+    </p>
+
+    <!-- Featured: Residential -->
+    <div class="track-grid-residential" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 280px; gap: 12px; margin-bottom: 12px;">
+      <div class="track-card" style="background-image: url('../algarve-apartments-core-builders/track_miro.webp');">
+        <div class="track-card__inner">
+          <div class="track-card__name">Miro Residential</div>
+          <div class="track-card__location">San Jose, CA</div>
+        </div>
+      </div>
+      <div class="track-card" style="background-image: url('../algarve-apartments-core-builders/track_alum_rock.jpg'); background-position: top center;">
+        <div class="track-card__inner">
+          <div class="track-card__name">1860 Alum Rock Apartments</div>
+          <div class="track-card__location">San Jose, CA</div>
+        </div>
+      </div>
+      <div class="track-card" style="background-image: url('../algarve-apartments-core-builders/track_the_grad.avif');">
+        <div class="track-card__inner">
+          <div class="track-card__name">The Grad Student Housing</div>
+          <div class="track-card__location">San Jose, CA</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Small: Corporate / Other -->
+    <div class="track-grid-small">
+      <div class="track-card track-card--placeholder" style="background-image: url('../bank-of-italy-housing/track_levis_stadium.jpg');">
+        <div class="track-card__inner">
+          <div class="track-card__label">Sports</div>
+          <div class="track-card__name">Levi's Stadium</div>
+        </div>
+      </div>
+      <div class="track-card track-card--placeholder" style="background-image: url('../webcor-clean-energy-campus/track_apple_hq.jpg');">
+        <div class="track-card__inner">
+          <div class="track-card__label">Corporate</div>
+          <div class="track-card__name">Apple Infinite Loop</div>
+        </div>
+      </div>
+      <div class="track-card track-card--placeholder" style="background-image: url('../webcor-clean-energy-campus/track_google.jpg');">
+        <div class="track-card__inner">
+          <div class="track-card__label">Corporate</div>
+          <div class="track-card__name">Google Borreagas</div>
+        </div>
+      </div>
+      <div class="track-card track-card--placeholder" style="background-image: url('../webcor-clean-energy-campus/track_adobe.jpg');">
+        <div class="track-card__inner">
+          <div class="track-card__label">Corporate</div>
+          <div class="track-card__name">Adobe Building</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- PRICING -->
+<!-- ══════════════════════════════════════════ -->
+<section class="pricing-section">
+  <div class="pricing-inner">
+    <div class="section-eyebrow">Pricing</div>
+    <h2 class="section-title">Service Proposal Options</h2>
+    <p class="section-lead" style="margin-bottom: 32px;">
+      Base pricing is set on a per-bin service basis. <strong>We do not charge a rental fee.</strong> State and local taxes (City of Santa Clara) and fees may apply.
+    </p>
+
+    <div class="pricing-table-wrap">
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th style="width: 50%;">Service</th>
+          <th>Quantity</th>
+          <th>Ton Limit</th>
+          <th>Unit Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="group-header">
+          <td colspan="4">Commingled Recycling Bins</td>
+        </tr>
+        <tr>
+          <td>40yd Commingled Bin</td>
+          <td>Each</td>
+          <td>5 tons</td>
+          <td class="price-input">$950.00</td>
+        </tr>
+        <tr>
+          <td>20yd Commingled Bin</td>
+          <td>Each</td>
+          <td>3 tons</td>
+          <td class="price-input">$651.00</td>
+        </tr>
+
+        <tr class="group-header">
+          <td colspan="4">Single Item (Source Separated) Recycling Bins</td>
+        </tr>
+        <tr>
+          <td>40yd Wood Bin</td>
+          <td>Each</td>
+          <td>5 tons</td>
+          <td class="price-input">$850.00</td>
+        </tr>
+        <tr>
+          <td>40yd Drywall Bin</td>
+          <td>Each</td>
+          <td>5 tons</td>
+          <td class="price-input">$888.00</td>
+        </tr>
+        <tr>
+          <td>10yd Concrete Bin</td>
+          <td>Each</td>
+          <td>8 tons</td>
+          <td class="price-input">$722.00</td>
+        </tr>
+        <tr>
+          <td>40yd or 20yd Metal Bin</td>
+          <td>Each</td>
+          <td>N/A</td>
+          <td class="price-input">Transport $250.00</td>
+        </tr>
+
+        <tr class="group-header">
+          <td colspan="3">Optional Additional Services</td>
+          <th style="color: var(--navy); font-size: 0.78rem; letter-spacing: 0.1em;">Service Price</th>
+        </tr>
+        <tr>
+          <td>Recycled Material Monthly Report (LEED Report)</td>
+          <td>Monthly</td>
+          <td>—</td>
+          <td><span class="included-badge">Included</span></td>
+        </tr>
+        <tr>
+          <td>Green Halo Management</td>
+          <td>Monthly</td>
+          <td>—</td>
+          <td><span class="included-badge">Included</span></td>
+        </tr>
+        <tr>
+          <td>Standard Waste Management Plan</td>
+          <td>One Time</td>
+          <td>—</td>
+          <td><span class="included-badge">Included</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <a href="1980 ACT- Applied Construction Technology Santa Clara Project.pdf" download style="display: inline-block; background: var(--navy); color: var(--white); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px 28px; border-radius: 99px; text-decoration: none;">&#8595; Download Proposal PDF</a>
+    </div>
+
+    <!-- Terms -->
+    <div class="terms-box" style="margin-top: 32px;">
+      <strong style="color: var(--navy); font-size: 0.85rem;">Terms &amp; Conditions</strong>
+      <ul>
+        <li>Overweight charges: $100/ton for Concrete bins; $130/ton for Recycling, Source Separated, Non-Recyclable, or Demolition bins over stated limits.</li>
+        <li>Metal-Only bins are not charged overweight fees and are credited based on market value minus transportation costs.</li>
+        <li>Driver standby fee of $150/hr applies if bin is not ready when dispatched (waived for delays under 20 minutes). After-hours service requests subject to additional charges.</li>
+        <li>Commingled Recycling bins must contain at least 65% recyclable material by weight and volume. Single-Item bins must contain 95%+ of a single item or will be reclassified.</li>
+        <li>Hazardous/Universal Solid Waste not accepted.</li>
+        <li>Additional charges apply for cover-top debris bin services on a per-service basis. (Current rate $150.00 per service)</li>
+        <li>FIC fee (Facility Incoming Material Charge, currently $40.00) included on each invoice per service.</li>
+        <li>Prices are valid for 30 days and are for this project only. After 30 days, pricing may be subject to change. Tax rates and jurisdiction fees may change without notice.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- YOUR TEAM -->
+<!-- ══════════════════════════════════════════ -->
+<section class="team-section">
+  <div class="team-inner">
+    <div class="section-eyebrow">Your Team</div>
+    <h2 class="section-title">The People Making It Happen</h2>
+    <p class="section-lead">
+      Real people, dedicated to your project from the first bin to the final close-out package. Every one of them is supporting your project.
+    </p>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/8e180e6c-00a3-473d-90d2-0152eaa15d31/Premier-12.jpg" alt="Sean Lernihan" />
+        <div class="team-name">Sean Lernihan</div>
+        <div class="team-title">Account Management</div>
+        <a class="team-contact-phone" href="tel:4085600536">(408) 560-0536</a>
+        <a class="team-contact-phone" href="mailto:sean@premierrecycle.com">sean@premierrecycle.com</a>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/cd484082-b0a0-47aa-891a-b90c373be61f/Dusty+Hill-1.jpg" alt="Dusty Hill" />
+        <div class="team-name">Dusty Hill</div>
+        <div class="team-title">Account Management</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/55cac0cc-76d3-4815-8e0d-cfc7ad5430bc/Premier-5.jpg" alt="Caroline Niemiec" />
+        <div class="team-name">Caroline Niemiec</div>
+        <div class="team-title">Sustainability &amp; Compliance</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/5bdd55af-82ca-4d86-bdef-d39527da7e70/Premier-9.jpg" alt="Jose Montenegro" />
+        <div class="team-name">Jose Montenegro</div>
+        <div class="team-title">Dispatching</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="../bank-of-italy-housing/aaron_hill.jpg" alt="Aaron Hill" />
+        <div class="team-name">Aaron Hill</div>
+        <div class="team-title">CEO</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/a4b507de-125c-4529-a57d-6b1c2d5aa84f/Premier-8.jpg" alt="Rosie Chavez" />
+        <div class="team-name">Rosie Chavez</div>
+        <div class="team-title">Customer Service</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/50b6c592-1a49-4512-826f-033df158fc9a/Sara+Headshot-1.jpg" alt="Sara Behnke" />
+        <div class="team-name">Sara Behnke</div>
+        <div class="team-title">Customer Service</div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="https://images.squarespace-cdn.com/content/v1/67c88a47091d96427cd3905c/89b26b83-b6f8-4304-9858-0ede91ae21b5/Premier-6.jpg" alt="Michael Grizzle" />
+        <div class="team-name">Michael Grizzle</div>
+        <div class="team-title">Facility Operations</div>
+      </div>
+      <div class="team-card" style="grid-column: 1 / -1; flex-direction: row; align-items: center; text-align: left; gap: 20px; background: var(--light-gray); border-radius: 12px; padding: 20px 28px;">
+        <img src="../webcor-clean-energy-campus/team-group.jpg" alt="Premier Recycle Team" style="width: 200px; height: 140px; object-fit: cover; object-position: center top; border-radius: 8px; flex-shrink: 0;" />
+        <div>
+          <div class="team-name">Our Drivers &amp; Sorters</div>
+          <div class="team-title">Behind every pickup is a team that takes pride in doing it right.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SIGNATURE / CTA -->
+<!-- ══════════════════════════════════════════ -->
+<section class="sig-section">
+  <div class="sig-inner">
+    <div class="sig-cta">
+      <h2>Let's Work Together</h2>
+      <p>We're certified, local, and ready to lock in your waste strategy from day one.</p>
+    </div>
+
+    <div class="sig-grid">
+      <!-- Customer -->
+      <div class="sig-block">
+        <h4>Customer Authorization</h4>
+        <div class="sig-field">
+          <label>Customer Signature</label>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <label>Printed Name and Title</label>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <label>Date</label>
+          <div class="sig-line"></div>
+        </div>
+      </div>
+
+      <!-- Premier Recycle -->
+      <div class="sig-block" style="border-color: var(--navy);">
+        <h4>Premier Recycle Authorization</h4>
+        <div class="sig-field">
+          <label>Premier Recycle Signature</label>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <label>Printed Name and Title</label>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <label>Date</label>
+          <div class="sig-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- FOOTER -->
+<!-- ══════════════════════════════════════════ -->
+<footer>
+  Premier Recycle Company &nbsp;|&nbsp; 348 Phelan Avenue, San Jose, CA 95112 &nbsp;|&nbsp;
+  <a href="tel:4082977910">(408) 297-7910</a> &nbsp;|&nbsp;
+  <a href="https://premierrecycle.com" target="_blank">premierrecycle.com</a>
+</footer>
+
+</body>
+</html>
